@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Spelling Bee NYT Helper</title>
+	<script src="popup.js"></script>
+	<style>
+		body {
+			background-color: #ffffff;
+			font-family: 'nyt-franklin', sans-serif;
+			font-weight: 400;
+			color: #000;
+		}
+
+		h1 {
+			font-family: 'nyt-cheltenham', sans-serif;
+			font-weight: 700;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin-bottom: 30px;
+		}
+
+		li {
+			display: inline-block;
+			margin-right: 10px;
+			font-size: 16px;
+			line-height: 22px;
+			margin-bottom: 10px;
+		}
+
+		hr {
+			border: 1px solid #b8b8b8;
+			margin: 10px 0;
+		}
+
+		#icon {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			width: 27px;
+			height: 35px;
+		}
+
+		#theGIF {
+			display: none;
+		}
+	</style>
+</head>
+
+<body style="width:400px">
+	<img src="../icons/nyt.png" id="icon" />
+	<h1>Words - <span id="wordCount"></span> remaining</h1>
+	<ul id="words"></ul>
+	<hr>
+	<h1>Hints</h1>
+	<ul id="hints"></ul>
+	<img id="theGIF" src="../icons/unknown.gif">
+</body>
+
+</html>
